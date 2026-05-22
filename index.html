@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Izatha — Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-logo">
+            <span class="logo-bracket">&lt;</span>Izatha<span class="logo-bracket">/&gt;</span>
+        </div>
+
+        <!-- Checkbox Hack untuk Menu Mobile Tanpa JS -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span><span></span><span></span>
+        </label>
+
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#biodata" class="nav-link">Biodata</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <div class="home-text">
+                <span class="badge">👋 Open to Opportunities</span>
+                <h1>Halo, saya<br><span class="highlight">Izatha</span></h1>
+                <p class="subtitle">
+                    Mahasiswa <strong>Teknik Informatika ITERA</strong> yang aktif berkuliah
+                    dan sedang mengembangkan diri sebagai <strong>Junior Web Developer</strong>.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn-primary">Hire Me <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#biodata" class="btn-secondary">Lihat Biodata</a>
+                </div>
+            </div>
+
+            <div class="home-image">
+                <div class="foto-box">
+                    <img src="testing.jpg" alt="Foto Izatha" class="foto">
+                    <div class="status-badge">
+                        <span class="dot"></span> Available
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Biodata -->
+    <section class="biodata" id="biodata">
+        <div class="section-header">
+            <span class="section-tag">Tentang Saya</span>
+            <h2>Biodata Saya</h2>
+            <p class="section-desc">Kenali saya lebih dekat melalui informasi di bawah ini.</p>
+        </div>
+
+        <div class="biodata-grid">
+            <div class="card">
+                <div class="card-icon"><i class="fa-solid fa-user"></i></div>
+                <div class="card-content">
+                    <h3>Nama</h3>
+                    <p>Izatha</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="card-content">
+                    <h3>Kampus</h3>
+                    <p>Institut Teknologi Sumatera</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+                <div class="card-content">
+                    <h3>Skill</h3>
+                    <p>HTML &amp; CSS</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <div class="card-content">
+                    <h3>Minat</h3>
+                    <p>AI Engineer</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skill Bar Section -->
+        <div class="skills-section">
+            <h3>Tech Stack</h3>
+            <div class="skill-bars">
+                <!-- Gunakan Inline CSS Style untuk lebar bar (Tanpa JS) -->
+                <div class="skill-item">
+                    <div class="skill-label"><span>HTML</span><span>75%</span></div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 75%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label"><span>CSS</span><span>70%</span></div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 70%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label"><span>Machine Learning</span><span>40%</span></div>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 40%;"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="section-header">
+            <span class="section-tag">Hubungi Saya</span>
+            <h2>Contact</h2>
+            <p class="section-desc">Contact me with</p>
+        </div>
+
+        <div class="contact-grid">
+            <a href="https://instagram.com/shinnxw_" target="_blank" class="contact-card">
+                <div class="contact-icon instagram"><i class="fa-brands fa-instagram"></i></div>
+                <div class="contact-info">
+                    <span class="contact-label">Instagram</span>
+                    <span class="contact-value">@shinnxw_</span>
+                </div>
+            </a>
+
+            <a href="https://github.com/luxxwyy" target="_blank" class="contact-card">
+                <div class="contact-icon github"><i class="fa-brands fa-github"></i></div>
+                <div class="contact-info">
+                    <span class="contact-label">GitHub</span>
+                    <span class="contact-value">github.com/luxxwyy</span>
+                </div>
+            </a>
+
+            <a href="mailto:LuxDrinkCoffee@gmail.com" class="contact-card">
+                <div class="contact-icon email"><i class="fa-solid fa-envelope"></i></div>
+                <div class="contact-info">
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">LuxDrinkCoffee@gmail.com</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-logo">
+                <span class="logo-bracket">&lt;</span>Izatha<span class="logo-bracket">/&gt;</span>
+            </div>
+            <p>© 2026 Izatha Portfolio. All rights reserved.</p>
+            <p class="footer-made">Made with HTML/CSS</p>
+        </div>
+    </footer>
+
+</body>
+</html>
